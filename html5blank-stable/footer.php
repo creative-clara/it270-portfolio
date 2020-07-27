@@ -1,18 +1,28 @@
+</div><!-- /wrapper -->
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+				
+
+<ul>
+    
+<li> Copyright 2020</li>
+<li>All Rights Reserved  </li> 
+<li>by <a href="#" target="_blank">Clara Poston Designs</a></li>
+    
+    
+<li><a href="http://validator.w3.org/check/referer" target="_blank"> Valid HTML</a></li> 
+<li><a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></li>
+</ul>
+
+
+	<!-- /copyright -->
 
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
+
 
 		<?php wp_footer(); ?>
 
@@ -24,6 +34,15 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
+		</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
 		</script>
 
 	</body>

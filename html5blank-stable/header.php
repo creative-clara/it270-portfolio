@@ -23,14 +23,14 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class( ! is_home() && ! is_front_page() ? "inner-page": ""); ?>>
 
 		<!-- wrapper -->
 
 
 			<!-- header -->
-			<header class="header clear" role="banner">
-
+<header class="header clear" role="banner">
+			
 <div class="top-row">
 	<div class="inner">
 <?php get_template_part('searchform'); ?>
@@ -49,11 +49,10 @@
 
 					<!-- nav -->
 					<nav class="nav" role="navigation">
+					<button class="nav-button">Toggle Navigation</button>
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
 </div><!--end inner-->
 			</header>
 			<!-- /header -->
-
-        <div class="wrapper">

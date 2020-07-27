@@ -49,7 +49,7 @@ body {
 img {
 	max-width:100%;
 	display: block;
-	vertical-align:bottom;
+	vertical-align: bottom;
 }
 a {
 	color:#444;
@@ -82,8 +82,8 @@ input:focus {
 }
 /* header */
 .header {
-height: 200px;
-background: yellow;
+height: 25px;
+
 }
 
 .top-row{
@@ -99,6 +99,11 @@ background: yellow;
 	/* background: gray; */
 }
 
+.search{
+	float:right;
+}
+
+
 /* logo */
 .logo {
 float: left;
@@ -106,22 +111,248 @@ float: left;
 .logo-img {
 
 }
-/* nav */
-.nav {
+
+.home #hero{
+	background-image: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/banner-clara.png');
+		background-position: 0 150px;
+		min-height: 550px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		}
+
+.inner-page #hero{
+	background-image: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/banner-clara.png');
+	background-position: 0 150px;
+	min-height: 550px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#hero img{
+	display: none;
+}
+
+/* .site-branding{
+	background: yellow;
+}
+.site-footer {
+	background: orange;
+	clear: both;
+	overflow: hidden;
+	padding-top: 20px;
+	width: 100%; */
+}
+
+#copyright {
+	height: 20px;
+	line-height: 50px;
+	font-size: .9em;
+	}
+	
+#copyright ul {
+	float: right;
+	margin-right: 5%
+	}
+	
+#copyright li {
+	float: left;
+	margin-left: 15px;
+	list-style-type: none;
+	}
+	
+
+#wrapper {
+max-width: 1100px;
+margin: 0 auto;
+/* background: beige; */
+clear: both;
+}
+
+.row {
+margin-bottom: 20px;
+overflow: hidden;
+clear: both;
+	}
+	
+.third {
+width: 31.91%;
+float: left;
+margin-right: 2.12%;
+align-content: center;
+margin-bottom: 20px;
+	
+}
+	
+.thrid-img{
+height: 100%;
+width: 100%;
+}
+	
+.col-8 {
+width: 48.93%;
+float: left;
+margin-right: 2.12%;
+align-content: center;
+	}
+	
+.col-8-img {
+height: auto;
+width: 100%;
+	}
+	
+.third:last-of-type,
+.col-8:last-of-type
+{
+margin-right: 0;
+	}
+	
+
+
+.inner-page .widget-area{
+	width: 35%;
+	float: right;
+	margin: 50px 0px;
+}
+
+.inner-page .main-site{
+	width: 62%;
+	float: left;
+	margin: 50px 10px;
+}
+
+
+h1 {
+	font-size: 3.6em;
+	text-align: center;
+	font-family: Playfair, serif;
+	color: #2A9D8F;
+	
+	}
+	
+	h1, h2, h3, h4 {
+	margin-bottom: 9px;
+	}
+	
+	h2{
+		color: #264653;
+		text-align: center;
+	}
+	
+	.specials{
+		line-height: 1.5;
+	}
+	
+	
+	blockquote {
+	font-size: 2em;
+	font-style: italic;
+	font-family: Playfair, serif;
+	text-align: center;
+	margin: 0 8% 20px 8%;
+	}
+	
+	p{
+	margin-bottom: 20px;
+	font-size: 1.2em; 
+	}
+	
+	.important {
+	font-size: 1.4em; 
+	margin: 25px 5% 25px 5%;
+	}
+	
+	.important:first-line{
+		color:#512A29;
+	}
+	
+	
+	.read-more {
+	display: block;
+	}
+	
+	main p{
+		font-size:1.1em;
+		line-height: 1.4; 
+	}
+	
+	
+	aside p{
+		font-size: .98em;
+	}
+	.thrid p,
+	col-8 p {
+	font-size: 1em;
+	}
+
+
+/****************************************************/
+/****************** NAVIGATION **********************/
+/***************************************************/
+
+nav {
 float: right;
 }
 
 .nav li{
 	list-style-type: none;
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+	position: relative;
+	color: black;
 }
+.sub-menu{
+	display: none;
+}
+
+.nav li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	top: 18px;
+	left: 0;
+	background: #B7B7B8;
+	padding: 5px 0px;
+}
+
+.nav li:hover .sub-menu li{
+	width: 120px;
+	margin-left: 2px !important;
+}
+
+.nav li:hover .sub-menu li a{
+	padding: left 4px;
+	
+}
+
 /* sidebar */
 .sidebar {
 
 }
 /* footer */
-.footer {
 
-}
+	footer {
+		width: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		position: static;
+		float: left;
+		text-align: center;
+		clear: both;
+		left: 0;
+		bottom: 0;
+		margin: 0 auto;
+		margin-top: 5%;
+		padding-left: 70px;
+	
+	}
+	
+	
+	footer li {
+		float: left;
+		margin-right: 15px;
+		list-style-type: none;
+		line-height: 50px;
+		}
 
 /*------------------------------------*\
     PAGES
@@ -299,3 +530,191 @@ a img.aligncenter {
 		page-break-after:avoid;
 	}
 }
+
+.nav-button { display: none; } /* hide the navigation button by default */
+
+
+
+
+/* *****************************************/
+/* ********** MOBILE *********************/
+/* ***************************************/
+
+@media only screen and (max-width: 700px) {
+
+
+	main{
+		float: none;
+		width: auto;
+		}
+		
+		aside{
+		float: none;
+		width: auto;
+		}
+
+		header{
+			position: static;
+			width:auto;
+			background:#eee;
+			padding-bottom: 20px;
+			background: white;
+			}
+			
+			
+			.col-8 {
+			width: auto;
+			float: none;
+			margin-right: 0;
+			align-content: center;
+			margin-bottom: 20px;
+			}
+			
+			col-8 img{
+				margin: 0 auto;
+			
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/menu-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/close-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+	body { padding-top: 50px; }
+
+	.nav li:hover .sub-menu{
+		position: static;
+		top: 0;
+		padding: 0px 0px;
+		background: none;
+	}
+
+	.nav li:hover .sub-menu li a{
+		padding: left 25px;
+	}
+
+	.nav li:hover .sub-menu li{
+		width: auto;
+
+	}
+
+	.nav li{	
+		float: none;
+		position: static;
+		margin-left: 0;
+		
+	}
+
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background-color: #512A29; /* change the menu color */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+	.primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+} /* End Mobile Styles */

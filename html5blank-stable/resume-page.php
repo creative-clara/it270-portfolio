@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+
+// Template name: Resume
+
+get_header(); ?>
 
 <div id="hero">
 
@@ -6,7 +10,7 @@
 
 	<div class="wrapper">
 
-	<main role="main">
+	<main id="primary" class="main-site">
 		<!-- section -->
 		<section>
 
@@ -46,6 +50,10 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
+<aside id="secondary" class="widget-area">
+    <?php dynamic_sidebar( 'widget-area-1' ); ?>
+</aside><!-- #secondary -->
+
+</div><!--end wrapper-->
 
 <?php get_footer(); ?>

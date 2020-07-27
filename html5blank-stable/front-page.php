@@ -1,9 +1,15 @@
-<?php 
+<?php
 //Template name: Full Width
 
 get_header(); ?>
 
-	<main role="main">
+<div id="hero">
+
+</div>
+
+	<div class="wrapper">
+
+	<main id="primary" class="main-site" role="main">
 		<!-- section -->
 		<section>
 
