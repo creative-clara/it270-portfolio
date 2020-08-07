@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-	<main role="main">
+<div class="wrapper">
+
+	<main role="main" class="main-site">
 	<!-- section -->
 	<section>
 
@@ -24,18 +26,21 @@
 			<!-- /post title -->
 
 			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+			<ul class="details">
+			<li class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></li>
+			<li class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></li>
+			<li class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></li>
+			</ul>
 			<!-- /post details -->
 
 			<?php the_content(); // Dynamic Content ?>
 
 			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+			<ul class="details">
+			<li><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></li>
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+			<li><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></li>
+			</ul>
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
@@ -62,6 +67,10 @@
 	<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
+	<aside id="secondary" class="widget-area">
+		<div class="sidebar-widget">
+			<?php dynamic_sidebar( 'blog-sidebar' ); ?>
+		</div>
+	</aside><!-- #secondary -->
 
 <?php get_footer(); ?>

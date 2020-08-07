@@ -177,9 +177,9 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 1', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3 class="widget-title>',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
 
@@ -191,6 +191,27 @@ if (function_exists('register_sidebar'))
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="widget-title>',
+        'after_title' => '</h3>'
+    ));
+     // Define Blog Sidebar
+        register_sidebar(array(
+        'name' => __('Blog Sidebar', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'blog-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+      // Define Contact Sidebar
+      register_sidebar(array(
+        'name' => __('Contact Sidebar', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'contact-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
 }
