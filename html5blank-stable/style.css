@@ -6,7 +6,6 @@
 	Author: Todd Motto (@toddmotto)
 	Author URI: http://toddmotto.com
 	Tags: Blank, HTML5, CSS3
-
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
@@ -102,7 +101,7 @@ clear: both;
 	line-height: 60px;
 	background: #5a6f87;
 	width: 100%;
-	top: 0;
+	margin-top: -15px;
 }
 
 .inner{
@@ -128,10 +127,10 @@ float: left;
 
 }
 
- .home #hero{
+.home #hero{
 		background-image: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/banner-clara.png');
 		background-position: 0 150px;
-		min-height: 650px;
+		min-height: 550px;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		/* position: absolute; */
@@ -145,7 +144,7 @@ ul {
 
 
 .inner-page #hero{
-	/* background-image: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/banner-clara.png'); */
+	background-image: url('http://www.claraposton.design/it270/portfolio/wp-content/uploads/banner-clara.png');
 	background-position: 0 150px;
 	min-height: 350px;
 	height: 100%;
@@ -230,8 +229,13 @@ margin-right: 0;
 	width: 30%;
 	float: right;
 	margin: 50px 10px;
+}
 
-
+.widget-area .icon{
+	align-content: center;
+	margin-bottom: 40px;
+	width: 25%;
+	height: 25%;
 }
 
 .inner-page .main-site{
@@ -357,14 +361,14 @@ article h2 {
 
 nav {
 float: right;
-margin: 10px 20px;
+margin: 10px 20px 0px 20px;
 /* position: absolute; */
 }
 
 .nav li{
 	list-style-type: none;
 	float: left;
-	margin-left: 15px;
+	margin-left: 35px;
 	margin-top: 5px;
 	color: black;
 	font-weight: bold;
